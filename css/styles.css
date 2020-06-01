@@ -21,7 +21,7 @@ html {
 :root {
     --primary-text-color: #757575;
     --title-text-color: #212121;
-    --accent: #2196f3;
+    --accent: #2196f3; 
     --primary-white-color: #ffffff;
 } 
  
@@ -310,11 +310,19 @@ span{color: var(--accent);}
     display: flex;
     list-style: none;
     padding: 0;
+    margin: 0;
+    fill: #AFB1B8;
     justify-content: center;
+}
+
+.team-list .soc-seti li:hover {
+    fill: white;
 }
 
 .team-list .soc-seti img:hover {
     background-color: var(--accent);
+    border-radius: 50%;
+    fill: white;
 }
 
 .team-list .item:nth-child(4n) {
