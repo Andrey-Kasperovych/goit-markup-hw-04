@@ -118,9 +118,33 @@ span{color: var(--accent);}
                 color: var(--primary-text-color);
                 padding-top: 32px;
                 padding-bottom: 32px;
+                --color2:  #757575;
 }
 
-.auth-nav .link:hover, .auth-nav .link:focus{color: #2196f3;}
+.auth-nav .item a{
+    text-decoration: none;
+}
+
+.auth-nav .item .item-konvert{
+    width: 16px;
+    height: 11.2px;
+    
+}
+
+.auth-nav .item .item-smartfon{
+    width: 10px;
+    height: 14.94px;
+    fill: #757575;
+}
+
+.auth-nav .item .item-smartfon:hover{
+    fill: var(--accent);
+}
+
+.auth-nav .link:hover, .auth-nav .link:focus{
+    color: #2196f3; 
+    --color2:  #2196f3;
+}
 
 .hero{
     /*margin-bottom: 94px;*/
@@ -131,7 +155,7 @@ span{color: var(--accent);}
     height: 600px;
     /*background: rgba(47, 48, 58, 0.8);*/
     background-image: linear-gradient( to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)),
-    url(../images/Header-img-\(1\).jpg);
+    url(../images/header-img.jpg);
     }
     
 
@@ -180,11 +204,32 @@ span{color: var(--accent);}
 
 .advantage-list .item {
     width: 278px;
-    margin-right: 29px;
+    margin-right: 30px;
 }
 
 .advantage-list .item:nth-child(4n) {
     margin-right: 0;
+}
+
+.advantage-list .item .button-icon{
+    width: 70px;
+    height: 120px;
+    padding: auto;
+}
+
+
+
+.advantage-list .item div{
+    width: 270px;
+    height: 120px;
+    border-radius: 4px;
+    background-color: #F5F4FA;
+}
+
+.advantage-list .item a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .advantage-kartinka{
@@ -304,6 +349,7 @@ span{color: var(--accent);}
     margin-right: 30px;
     box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
     border-radius: 4px;
+    padding-bottom: 24px;
 }
 
 .team-list .soc-seti {
@@ -313,7 +359,6 @@ span{color: var(--accent);}
     margin: 0;
     fill: #AFB1B8;
     justify-content: center;
-    margin-bottom: 24px;
 }
 
 .team-list .soc-seti li:hover {
@@ -378,9 +423,32 @@ span{color: var(--accent);}
 }    
 
 .customers-list .item {
-    text-align: center;
     width: 170px;
+    height: 90px;
+    border-radius: 4px;
     margin-right: 30px;
+    border: 1px solid #AFB1B8;
+    --color2: #afb1b8;
+}
+
+.customers-list .item:hover{
+    border: 1px solid #2196F3;;
+    --color2: #2196F3;
+    --color3: #2196F3;
+}
+
+.customers-list .item a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 170px;
+    height: 90px;
+}
+
+.customers-list .button-icon{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .customers-list .item:nth-child(6n) {
@@ -438,13 +506,13 @@ span{color: var(--accent);}
     
 }
 
-.connect-list {
+/* .connect-list {
     display: flex;
     list-style: none;
     flex-wrap: wrap;
     padding: 0;
     width: 207px;
-}
+} */
 
 .connect-list .item {
     margin-right: 11px;
@@ -467,6 +535,7 @@ span{color: var(--accent);}
 
 .button{
     display: inline-block;
+
     border-radius: 4px;
     padding: 10px 32px;
     /* min-width: 200px; */
@@ -491,6 +560,7 @@ span{color: var(--accent);}
 
 .soc-seti .button {
     display: flex;
+    text-decoration: none;
     padding: 0;
     border: none;
     width: 44px;
@@ -527,6 +597,51 @@ span{color: var(--accent);}
 .soc-seti .button .button-icon:hover {
     --color3: white;
 }
+
+/*Соц. сети футера*/
+
+.connect-glav .connect{
+    display: block;
+    margin-bottom: 20px;
+}
+
+.socseti-footer{
+    display: flex;
+}
+
+.socseti-footer .button-footer{
+    display: flex;
+    text-decoration: none;
+    padding: 0;
+    border: none;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);;
+    align-items: center;
+    justify-content: center;
+}
+
+.socseti-footer .button-footer .button-icon{
+    --color3: white;
+    width: 20px;
+    height: 20px;
+}
+
+.socseti-footer .button-footer:hover{
+    background-color: var(--accent);
+}
+
+.socseti-footer li {
+    margin-right: 10px;
+}
+
+
+
+.socseti-footer li:nth-child(4n) {
+    margin-right: 0;
+}
+
 
 
 /* Portfolio */
